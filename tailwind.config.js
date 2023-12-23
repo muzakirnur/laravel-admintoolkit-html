@@ -18,7 +18,12 @@ export const themeColors = {
 
 export default {
   darkMode: 'class',
-  content: ['./src/**/*.{html,css,scss,js}'],
+  content: [
+    './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    './storage/framework/views/*.php',
+    './resources/views/**/*.blade.php',
+    './vendor/wire-elements/modal/src/ModalComponent.php',
+  ],
   theme: {
     fontFamily: {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans],
@@ -30,7 +35,7 @@ export default {
         md: '100%',
         lg: '100%',
         xl: '100%',
-        "2xl": "1536px",
+        '2xl': '1536px',
       },
     },
     extend: {
@@ -135,17 +140,11 @@ export default {
             },
             table: {
               overflowX: 'auto',
-            }
+            },
           },
         },
       }),
-      
     },
   },
-  plugins: [
-    forms,
-    variables,
-    typography,
-  ],
-}
-
+  plugins: [forms, variables, typography],
+};
