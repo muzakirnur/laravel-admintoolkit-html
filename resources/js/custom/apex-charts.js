@@ -1,4 +1,4 @@
-import themeConfig from '@tailwind.config';
+import themeConfig from '../../../tailwind.config';
 import ApexCharts from 'apexcharts';
 import colors from 'tailwindcss/colors';
 import defaultTheme from 'tailwindcss/defaultTheme';

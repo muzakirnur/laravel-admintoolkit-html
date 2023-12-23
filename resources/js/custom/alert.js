@@ -19,11 +19,12 @@ const controlledAlertSourceCode = `
     })
   </script>
 `;
+if (controlledAlertCodeViewer) {
+  const controlledAlertCodeViewer = createCodeViewer('#controlled-alert-code-viewer', controlledAlertSourceCode);
+  controlledAlertCodeViewer.render();
 
-const controlledAlertCodeViewer = createCodeViewer('#controlled-alert-code-viewer', controlledAlertSourceCode);
-controlledAlertCodeViewer.render();
-
-const btnHideAlert = document.querySelector('#btn-hide-alert');
-btnHideAlert.addEventListener('click', () => {
-  createDismissableAlert('#controlled-alert').dismiss();
-});
+  const btnHideAlert = document.querySelector('#btn-hide-alert');
+  btnHideAlert.addEventListener('click', () => {
+    createDismissableAlert('#controlled-alert').dismiss();
+  });
+}

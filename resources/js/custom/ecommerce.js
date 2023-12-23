@@ -1,6 +1,6 @@
 import ApexCharts from 'apexcharts';
 import colors from 'tailwindcss/colors';
-import themeConfig, { themeColors } from '@tailwind.config';
+import themeConfig, { themeColors } from '../../../tailwind.config';
 
 const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
 

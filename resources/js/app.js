@@ -1,4 +1,19 @@
 import './bootstrap';
+// import './custom/alert';
+// import './custom/analytics';
+// import './custom/apex-charts';
+// import './custom/calendar';
+// import './custom/carousel';
+// import './custom/chat';
+// import './custom/data-table';
+// import './custom/datepicker';
+// import './custom/drawer';
+// import './custom/ecommerce';
+// import './custom/editor';
+// import './custom/email';
+
+import Alpine from 'alpinejs';
+//Third party packages
 import '@fortawesome/fontawesome-free/js/all';
 import feather from 'feather-icons';
 import ResizeObserver from 'resize-observer-polyfill';
@@ -22,6 +37,10 @@ import tabs from './components/tabs';
 import themeSwitcher from './components/theme-switcher';
 import tooltip from './components/tooltip';
 import uploader from './components/uploader';
+
+window.Alpine = Alpine;
+
+Alpine.start();
 
 // Initialize searchModal
 searchModal.init();
