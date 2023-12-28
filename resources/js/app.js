@@ -1,6 +1,6 @@
 import './bootstrap';
 // import './custom/alert';
-// import './custom/analytics';
+import './custom/analytics';
 // import './custom/apex-charts';
 // import './custom/calendar';
 // import './custom/carousel';
